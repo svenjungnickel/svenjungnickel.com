@@ -1,4 +1,4 @@
-# svenjungnickel
+# svenjungnickel.com
 
 ## Build Setup
 
