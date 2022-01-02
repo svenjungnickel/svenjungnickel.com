@@ -94,3 +94,9 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Config files
+nuxt.config.js
+jest.config.js
+stylelint.config.js
+tailwind.config.js
