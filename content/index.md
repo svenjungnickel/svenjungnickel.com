@@ -14,6 +14,7 @@ social:
   github: https://github.com/svenjungnickel
   linkedin: https://www.linkedin.com/in/svenjungnickel/
   xing: https://www.xing.com/profile/Sven_Jungnickel2/cv
+  mail: mailto:svenjungnickel@googlemail.com
 ---
 
 Full-stack webdev at heart with 15 years experience.

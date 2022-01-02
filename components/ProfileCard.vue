@@ -19,6 +19,7 @@
         </div>
         <div class="text-sm text-gray-300 md:absolute pt-3 md:pt-0 bottom-0 right-0">
           <nuxt-content :document="content" />
+          <SocialLinks :social="content.social" class="pt-3 right-0" />
         </div>
       </div>
     </div>

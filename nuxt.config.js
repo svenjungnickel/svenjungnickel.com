@@ -35,6 +35,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://image.nuxtjs.org/
     '@nuxt/image',
+    // https://github.com/nuxt-community/svg-module
+    '@nuxtjs/svg'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
