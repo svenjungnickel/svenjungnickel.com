@@ -33,6 +33,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://image.nuxtjs.org/
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,4 +57,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  image: {
+    presets: {
+      profile: {
+        modifiers: {
+          format: 'webp',
+          quality: 80
+        }
+      }
+    }
+  }
 }

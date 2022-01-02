@@ -1,10 +1,15 @@
 <template>
   <div
     class="rounded-lg shadow-lg bg-gray-600 w-full flex flex-row flex-wrap p-3 antialiased bg-no-repeat bg-cover bg-blend-multiply"
-    :style="{ backgroundImage: 'url(' + background + ')' }"
+    :style="{ backgroundImage: 'url(' + content.background + ')' }"
   >
     <div class="md:w-1/3 w-full">
-      <img class="rounded-lg shadow-lg antialiased" alt="Profile picture of Sven Jungnickel smiling" :src="image" />
+      <nuxt-img
+        class="rounded-lg shadow-lg antialiased"
+        preset="profile"
+        :src="content.image.src"
+        :alt="content.image.alt"
+      />
     </div>
     <div class="md:w-2/3 w-full px-3 flex flex-row flex-wrap">
       <div class="w-full text-right text-gray-700 font-semibold relative pt-3 md:pt-0">
@@ -27,14 +32,6 @@ export default {
     content: {
       type: Object,
       required: true,
-    },
-  },
-  computed: {
-    background() {
-      return this.content?.background ? require(`~/assets/${this.content.background}`) : ''
-    },
-    image() {
-      return this.content?.image ? require(`~/assets/${this.content.image}`) : ''
     },
   },
 }

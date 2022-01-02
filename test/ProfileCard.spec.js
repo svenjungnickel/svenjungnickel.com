@@ -8,10 +8,16 @@ describe('ProfileCard', () => {
         content: {
           name: 'name',
           position: 'position',
+          image: {
+            src: 'image.jpg',
+            alt: 'alt',
+          },
+          background: 'background.jpg',
         },
       },
       stubs: {
         NuxtContent: true,
+        NuxtImg: true,
       },
     })
     expect(wrapper.vm).toBeTruthy()
