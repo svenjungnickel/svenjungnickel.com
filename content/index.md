@@ -8,7 +8,9 @@ position: Senior Web Developer
 image:
   src: profile.jpg
   alt: Profile picture of Sven Jungnickel smiling
-background: background.jpg
+background:
+  modern: background.webp
+  fallback: background.jpg
 social:
   twitter: https://twitter.com/SvenJungnickel1
   github: https://github.com/svenjungnickel

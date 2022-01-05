@@ -2,7 +2,7 @@
 <template>
   <ul class="flex justify-end">
     <li v-for="(link, index) in social" :key="index" class="px-1">
-      <a :href="link" target="_blank" rel="nofollow noopener noreferrer">
+      <a :href="link" target="_blank" rel="nofollow noopener noreferrer" :title="index">
         <i v-html="require(`../assets/icons/${index}.svg?raw`)" />
       </a>
     </li>
