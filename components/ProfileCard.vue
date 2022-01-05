@@ -1,7 +1,10 @@
 <template>
   <div
     class="rounded-lg shadow-lg bg-gray-600 w-full flex flex-row flex-wrap p-3 antialiased bg-no-repeat bg-cover bg-blend-multiply"
-    :style="{ backgroundImage: 'url(' + content.background + ')' }"
+    :style="[
+      { backgroundImage: 'url(' + content.background.modern + ')' },
+      { backgroundImage: 'url(' + content.background.fallback + '.)' },
+    ]"
   >
     <div class="md:w-1/3 w-full">
       <nuxt-img
@@ -9,6 +12,8 @@
         preset="profile"
         :src="content.image.src"
         :alt="content.image.alt"
+        width="312"
+        height="312"
       />
     </div>
     <div class="md:w-2/3 w-full px-3 flex flex-row flex-wrap">
