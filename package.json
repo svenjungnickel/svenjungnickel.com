@@ -2,6 +2,9 @@
   "name": "svenjungnickel",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -48,7 +51,7 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
-    "jest": "^27.4.6",
+    "jest": "^27.4.7",
     "lint-staged": "^12.1.5",
     "postcss": "^8.4.4",
     "postcss-html": "^1.3.0",
