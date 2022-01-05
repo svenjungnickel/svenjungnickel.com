@@ -3,7 +3,7 @@
     class="rounded-lg shadow-lg bg-gray-600 w-full flex flex-row flex-wrap p-3 antialiased bg-no-repeat bg-cover bg-blend-multiply"
     :style="[
       { backgroundImage: 'url(' + content.background.modern + ')' },
-      { backgroundImage: 'url(' + content.background.fallback + '.)' },
+      { backgroundImage: 'url(' + content.background.fallback + ')' },
     ]"
   >
     <div class="md:w-1/3 w-full">
