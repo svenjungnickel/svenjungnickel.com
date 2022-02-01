@@ -1,0 +1,5 @@
+[build]
+  publish = "dist/"
+  command = "npm run generate"
+  [context.deploy-preview]
+    ignore = "git log -1 --pretty=%B | grep dependabot"
