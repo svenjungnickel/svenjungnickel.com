@@ -6,4 +6,5 @@
  */
 module.exports = {
   mode: 'jit',
+  darkMode: 'media'
 }

@@ -10,3 +10,11 @@ a {
     @apply text-gray-400;
   }
 }
+
+// CSS fix for 100vh in mobile WebKit https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
+}
