@@ -1,11 +1,11 @@
 <template>
   <div
-    class="rounded-lg shadow-lg bg-gray-600 w-full flex flex-row flex-wrap p-3 antialiased bg-no-repeat bg-cover bg-blend-multiply"
+    class="flex w-full flex-row flex-wrap rounded-lg bg-gray-600 bg-cover bg-no-repeat p-3 antialiased bg-blend-multiply shadow-lg"
     :style="{ backgroundImage: 'url(' + content.background.modern + '), url(' + content.background.fallback + ')' }"
   >
-    <div class="md:w-1/3 w-full">
+    <div class="w-full md:w-1/3">
       <nuxt-img
-        class="rounded-lg shadow-lg antialiased"
+        class="rounded-lg antialiased shadow-lg"
         preset="profile"
         :src="content.image.src"
         :alt="content.image.alt"
@@ -13,15 +13,15 @@
         height="312"
       />
     </div>
-    <div class="md:w-2/3 w-full px-3 flex flex-row flex-wrap">
-      <div class="w-full text-right text-gray-700 font-semibold relative pt-3 md:pt-0">
-        <div class="text-2xl text-white leading-tight">{{ content.name }}</div>
+    <div class="flex w-full flex-row flex-wrap px-3 md:w-2/3">
+      <div class="relative w-full pt-3 text-right font-semibold text-gray-700 md:pt-0">
+        <div class="text-2xl leading-tight text-white">{{ content.name }}</div>
         <div class="text-normal text-gray-300 hover:text-gray-400">
           <span class="border-b border-dashed border-gray-500 pb-1">{{ content.position }}</span>
         </div>
-        <div class="text-sm text-gray-300 md:absolute pt-3 md:pt-0 bottom-0 right-0">
+        <div class="bottom-0 right-0 pt-3 text-sm text-gray-300 md:absolute md:pt-0">
           <nuxt-content :document="content" />
-          <SocialLinks :social="content.social" class="pt-3 right-0" />
+          <SocialLinks :social="content.social" class="right-0 pt-3" />
         </div>
       </div>
     </div>
