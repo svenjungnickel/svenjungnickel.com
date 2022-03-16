@@ -5,7 +5,7 @@
   >
     <div class="w-full md:w-1/3">
       <nuxt-img
-        class="rounded-lg antialiased shadow-lg"
+        class="m-auto rounded-lg antialiased shadow-lg"
         preset="profile"
         :src="content.image.src"
         :alt="content.image.alt"
