@@ -9,6 +9,11 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v2
@@ -16,7 +21,7 @@ jobs:
       - name: Setup node env 🏗
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: ${{ matrix.node }}
           check-latest: true
 
       - name: Cache node_modules 📦
@@ -30,13 +35,12 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci --prefer-offline --no-audit
 
-      - name: Generate project 💻
-        run: npm run generate
+      - name: Run lighthouse mobile audit 📱
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        run: npm run lhci:mobile
 
-      - name: Audit URLs using Lighthouse 🎉
-        uses: treosh/lighthouse-ci-action@v9
-        with:
-          uploadArtifacts: true
-          temporaryPublicStorage: true
-          runs: 3
-          configPath: './lighthouserc.json'
+      - name: Run lighthouse desktop audit 🖥️
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        run: npm run lhci:desktop

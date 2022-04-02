@@ -9,60 +9,100 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
+# generate static project and launch server
 $ npm run generate
+$ npm run start
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## 💫 Deploy
 
-## Special Directories
+To deploy on [Netlify](https://www.netlify.com/) just hit following button:
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/svenjungnickel/svenjungnickel.com)
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+You can also test the Netlify build before you deploy.
 
-### `assets`
+1.  **Link Netlify Project.**
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+    Run following command to link the project.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+    ```sh
+    netlify link
+    ```
 
-### `components`
+    Select a way to link the project.
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+2.  **Run test build.**
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+    To test the build run following command:
 
-### `layouts`
+    ```sh
+    netlify build
+    ```
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+    This will run the build on your local dev environment. The logs will show if the build will be successful or has
+    any errors.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+## 🚨 Linting
 
-### `pages`
+We are using [EsLint](https://eslint.org/) for Javascript linting. Simply run following command to lint your code:
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+```sh
+npm run lint
+```
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+To fix any issues simply run the fix command:
 
-### `plugins`
+```sh
+npm run lintfix
+```
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+## ✅ Unit tests
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+We are using [Jest](https://jestjs.io/) for unit tests. You can find more details in the [gatsby docs](https://www.gatsbyjs.org/docs/unit-testing/).
 
-### `static`
+To run all unit tests simply use following command:
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+```sh
+npm run test
+```
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+You can also watch unit tests while developing:
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+```sh
+npx jest --watch
+```
 
-### `store`
+To watch all unit tests run following:
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+```sh
+npx jest --watchAll
+```
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+All unit tests generate also code coverage. You can find the generated code coverage under `<rootDir>/coverage/index.html`.
+
+## 🎉 Lighthouse audits
+
+We are running lighthouse audits via [lighthouse CI CLI](https://github.com/GoogleChrome/lighthouse-ci).
+
+To start mobile Lighthouse audits use following command:
+
+```sh
+npm run lhci:mobile
+```
+
+To start desktop Lighthouse audits use following command:
+
+```sh
+npm run lhci:desktop
+```
+
+## 🎬 Run GitHub actions locally
+
+To test GitHub actions locally before pushing to GitHub we are using [nektos/act](https://github.com/nektos/act).
+You have to install it first via brew `brew install act`. Then you can run actions via following command:
+
+```sh
+act -j <workflow-name>
+```
+
+Visit the docs for more [example commands](https://github.com/nektos/act#example-commands).

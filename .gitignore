@@ -90,4 +90,4 @@ sw.*
 *.swp
 
 # Lighthouse ci results
-.lighthouseci
+.lighthouseci/
