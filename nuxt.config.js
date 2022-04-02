@@ -51,6 +51,7 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
+      theme_color: '#000000',
     },
   },
 

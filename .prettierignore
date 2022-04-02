@@ -103,3 +103,6 @@ tailwind.config.js
 
 # Github actions
 .github/
+
+# Lighthouse ci
+.lighthouseci/
