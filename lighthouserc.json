@@ -1,9 +1,7 @@
 {
   "ci": {
     "collect": {
-      "startServerCommand": "npm run generate && npm run start",
-      "url": ["http://localhost:3000/"],
-      "numberOfRuns": 3
+      "staticDistDir": "./dist"
     },
     "upload": {
       "target": "temporary-public-storage"
