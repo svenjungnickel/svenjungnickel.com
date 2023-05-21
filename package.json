@@ -42,7 +42,7 @@
     "@lhci/cli": "^0.12.0",
     "@nuxt/image": "^0.7.1",
     "@nuxtjs/eslint-config": "^12.0.0",
-    "@nuxtjs/eslint-module": "^4.0.2",
+    "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/stylelint-module": "^5.0.1",
     "@nuxtjs/svg": "^0.4.0",
     "@nuxtjs/tailwindcss": "^6.7.0",
