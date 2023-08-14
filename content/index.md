@@ -12,7 +12,7 @@ background:
   modern: background.webp
   fallback: background.jpg
 social:
-  twitter: https://twitter.com/SvenJungnickel1
+  x-twitter: https://twitter.com/SvenJungnickel1
   github: https://github.com/svenjungnickel
   linkedin: https://www.linkedin.com/in/svenjungnickel/
   xing: https://www.xing.com/profile/Sven_Jungnickel2/cv
