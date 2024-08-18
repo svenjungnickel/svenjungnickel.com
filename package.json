@@ -63,7 +63,7 @@
     "prettier-plugin-tailwindcss": "^0.6.6",
     "sass": "^1.77.8",
     "sass-loader": "^10.5.1",
-    "stylelint": "^16.8.1",
+    "stylelint": "^16.8.2",
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-config-standard": "^36.0.1",
     "vue-jest": "^3.0.4"
