@@ -22,5 +22,3 @@ social:
 Full-stack webdev at heart with 15 years experience.
 
 Strong passion for Test Automation and Continuous Integration.
-
-Currently working for [move:elevator](https://www.move-elevator.de/) in Dresden, Germany.
