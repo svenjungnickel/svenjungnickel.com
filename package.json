@@ -26,7 +26,7 @@
     "*.**": "prettier --check --ignore-unknown"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
+    "@nuxt/content": "^3.1.1",
     "@nuxt/image": "^0.7.2",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.40.0",
