@@ -12,11 +12,11 @@ background:
   modern: background.webp
   fallback: background.jpg
 social:
-  x-twitter: https://twitter.com/SvenJungnickel1
+  bluesky: https://bsky.app/profile/svenjungnickel.dev
   github: https://github.com/svenjungnickel
   linkedin: https://www.linkedin.com/in/svenjungnickel/
   xing: https://www.xing.com/profile/Sven_Jungnickel2/cv
-  mail: mailto:svenjungnickel@googlemail.com
+  mail: mailto:mail@svenjungnickel.dev
 ---
 
 Full-stack webdev at heart with 15 years experience.
