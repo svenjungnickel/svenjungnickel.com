@@ -61,6 +61,6 @@
     "stylelint-config-recommended-vue": "^1.6.0",
     "stylelint-config-standard": "^40.0.0",
     "vite-svg-loader": "^5.1.0",
-    "vitest": "^3.2.0"
+    "vitest": "^4.0.18"
   }
 }
