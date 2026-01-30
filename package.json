@@ -38,10 +38,10 @@
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.7.1",
     "@lhci/cli": "^0.14.0",
+    "@nuxt/devtools": "^3.1.1",
     "@nuxt/eslint": "^0.5.0",
     "@nuxt/test-utils": "^3.14.0",
     "@nuxtjs/stylelint-module": "^5.2.0",
-    "vite-svg-loader": "^5.1.0",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@vite-pwa/nuxt": "^0.10.0",
     "@vue/test-utils": "^2.4.0",
@@ -60,6 +60,7 @@
     "stylelint": "^16.14.1",
     "stylelint-config-recommended-vue": "^1.6.0",
     "stylelint-config-standard": "^39.0.0",
+    "vite-svg-loader": "^5.1.0",
     "vitest": "^3.2.0"
   }
 }
