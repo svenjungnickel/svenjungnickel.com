@@ -87,6 +87,9 @@ dist
 # IDE / Editor
 .idea
 
+# Claude Code CLI
+.claude
+
 # Service worker
 sw.*
 
