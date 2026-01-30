@@ -4,7 +4,7 @@
     :style="{ backgroundImage: 'url(' + content.background.modern + '), url(' + content.background.fallback + ')' }"
   >
     <div class="w-full md:w-1/3">
-      <nuxt-img
+      <NuxtImg
         class="mx-auto rounded-lg antialiased shadow-lg md:mx-0"
         preset="profile"
         :src="content.image.src"
@@ -20,7 +20,7 @@
           <span class="border-b border-dashed border-gray-500 pb-1">{{ content.position }}</span>
         </div>
         <div class="bottom-0 right-0 pt-3 text-sm text-gray-300 md:absolute md:pt-0">
-          <nuxt-content :document="content" />
+          <ContentRenderer :value="content" />
           <SocialLinks :social="content.social" class="right-0 pt-3" />
         </div>
       </div>
@@ -28,14 +28,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ProfileCard',
-  props: {
-    content: {
-      type: Object,
-      required: true,
-    },
-  },
-}
+<script setup lang="ts">
+defineProps<{
+  content: any
+}>()
 </script>
