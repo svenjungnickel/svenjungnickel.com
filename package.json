@@ -21,11 +21,6 @@
     "lhci:mobile": "lhci autorun",
     "lhci:desktop": "lhci autorun --collect.settings.preset=desktop"
   },
-  "lint-staged": {
-    "*.{js,vue,ts}": "eslint --cache",
-    "*.{css,scss,sass,html,vue}": "stylelint",
-    "*.**": "prettier --check --ignore-unknown"
-  },
   "dependencies": {
     "@nuxt/content": "^2.13.4",
     "@nuxt/image": "^2.0.0",
