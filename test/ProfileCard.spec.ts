@@ -1,10 +1,11 @@
-import { shallowMount } from '@vue/test-utils'
+import { describe, test, expect } from 'vitest'
+import { mountSuspended } from '@nuxt/test-utils/runtime'
 import ProfileCard from '@/components/ProfileCard.vue'
 
 describe('ProfileCard', () => {
-  test('is a Vue instance', () => {
-    const wrapper = shallowMount(ProfileCard, {
-      propsData: {
+  test('is a Vue instance', async () => {
+    const wrapper = await mountSuspended(ProfileCard, {
+      props: {
         content: {
           name: 'name',
           position: 'position',
@@ -12,14 +13,12 @@ describe('ProfileCard', () => {
             src: 'image.jpg',
             alt: 'alt',
           },
-          background: 'background.jpg',
+          background: {
+            modern: 'background.webp',
+            fallback: 'background.jpg',
+          },
           social: {},
         },
-      },
-      stubs: {
-        NuxtContent: true,
-        NuxtImg: true,
-        SocialLinks: true,
       },
     })
     expect(wrapper.vm).toBeTruthy()

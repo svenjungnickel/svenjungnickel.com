@@ -1,0 +1,29 @@
+# Build output
+.nuxt
+.output
+dist
+
+# Dependencies
+node_modules
+
+# Cache
+.cache
+.eslintcache
+.stylelintcache
+
+# Coverage
+coverage
+.nyc_output
+
+# Logs
+*.log
+
+# IDE
+.idea
+
+# System files
+.DS_Store
+
+# Misc
+sw.*
+.lighthouseci/

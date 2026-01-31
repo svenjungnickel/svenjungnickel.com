@@ -47,6 +47,9 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Optional stylelint cache
+.stylelintcache
+
 # Optional REPL history
 .node_repl_history
 
@@ -62,14 +65,21 @@ typings/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
+# Nuxt Content v3 data directory
+.data
+
 # next.js build output
 .next
 
 # nuxt.js build output
 .nuxt
+.nuxtrc
 
 # Nuxt generate
 dist
+
+# Nuxt 3/4 output
+.output
 
 # vuepress build output
 .vuepress/dist
@@ -79,6 +89,9 @@ dist
 
 # IDE / Editor
 .idea
+
+# Claude Code CLI
+.claude
 
 # Service worker
 sw.*
