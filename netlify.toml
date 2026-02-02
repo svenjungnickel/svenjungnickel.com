@@ -5,22 +5,8 @@
     ignore = "git log -1 --pretty=%B | grep dependabot"
 
 [[redirects]]
-  from = "https://svenjungnickel.com/*"
+  from = "/*"
   to = "https://www.svenjungnickel.dev/:splat"
   status = 301
   force = true
-[[redirects]]
-  from = "https://www.svenjungnickel.com/*"
-  to = "https://www.svenjungnickel.dev/:splat"
-  status = 301
-  force = true
-[[redirects]]
-  from = "https://svenjungnickel.de/*"
-  to = "https://www.svenjungnickel.dev/:splat"
-  status = 301
-  force = true
-[[redirects]]
-   from = "https://www.svenjungnickel.de/*"
-   to = "https://www.svenjungnickel.dev/:splat"
-   status = 301
-   force = true
+  conditions = { Host = ["svenjungnickel.com", "www.svenjungnickel.com", "svenjungnickel.de", "www.svenjungnickel.de", "svenjungnickel.dev"] }
