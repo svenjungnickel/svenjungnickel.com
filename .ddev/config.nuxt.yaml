@@ -1,0 +1,9 @@
+web_extra_exposed_ports:
+  - name: nuxt
+    container_port: 3000
+    http_port: 80
+    https_port: 443
+web_extra_daemons:
+  - name: nuxt
+    command: '/var/www/html/.ddev/commands/web/nuxt.sh'
+    directory: /var/www/html

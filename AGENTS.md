@@ -19,47 +19,66 @@ It summarizes how to build, lint, test, and follow local style.
 - `test/` unit tests (Vitest).
 - `dist/` generated output (do not edit manually).
 
+## DDEV
+
+- `ddev start` starts the containers.
+- `ddev restart` restarts containers after config changes.
+- `ddev describe` shows URLs and ports.
+- `ddev exec <command>` runs a command in the web container.
+- `ddev logs -s web --tail 200` shows recent web logs.
+- Web image customizations live in `.ddev/web-build/` (Chromium for Lighthouse).
+
 ## Install
 
-- `npm install`
+- `ddev exec npm install`
 
 ## Dev / build / preview
 
-- `npm run dev` starts Nuxt dev server (default localhost:3000).
-- `npm run build` builds server output.
-- `npm run generate` builds static output in `dist/`.
-- `npm run preview` previews a production build.
+- `ddev exec npm run dev` starts Nuxt dev server (default localhost:3000).
+- `ddev exec npm run build` builds server output.
+- `ddev exec npm run generate` builds static output in `dist/`.
+- `ddev exec npm run preview` previews a production build.
 
 ## Linting and formatting
 
-- `npm run lint` runs ESLint + Stylelint + Prettier check.
-- `npm run lint:js` runs ESLint on `.js,.vue,.ts`.
-- `npm run lint:style` runs Stylelint on CSS/SCSS/Sass/HTML/Vue.
-- `npm run lint:prettier` runs Prettier check.
-- `npm run lintfix` runs Prettier write, ESLint fix, Stylelint fix.
+- `ddev exec npm run lint` runs ESLint + Stylelint + Prettier check.
+- `ddev exec npm run lint:js` runs ESLint on `.js,.vue,.ts`.
+- `ddev exec npm run lint:style` runs Stylelint on CSS/SCSS/Sass/HTML/Vue.
+- `ddev exec npm run lint:prettier` runs Prettier check.
+- `ddev exec npm run lintfix` runs Prettier write, ESLint fix, Stylelint fix.
 
 ### Linting a single file
 
-- ESLint: `ESLINT_USE_FLAT_CONFIG=false npx eslint --ext ".js,.vue,.ts" path/to/file.vue`
-- Stylelint: `npx stylelint "path/to/file.vue"`
-- Prettier: `npx prettier --check "path/to/file.vue"`
+- ESLint: `ddev exec ESLINT_USE_FLAT_CONFIG=false npx eslint --ext ".js,.vue,.ts" path/to/file.vue`
+- Stylelint: `ddev exec npx stylelint "path/to/file.vue"`
+- Prettier: `ddev exec npx prettier --check "path/to/file.vue"`
 
 ## Tests
 
-- `npm run test` runs `vitest run`.
+- `ddev exec npm run test` runs `vitest run`.
 - Coverage uses v8 and includes `components/**/*.vue` and `pages/**/*.vue`.
 
 ### Run a single test
 
-- By file: `npm run test -- path/to/file.test.ts`
-- By file (direct): `npx vitest run path/to/file.test.ts`
-- By name: `npx vitest run -t "test name"`
-- Watch mode: `npx vitest`
+- By file: `ddev exec npm run test -- path/to/file.test.ts`
+- By file (direct): `ddev exec npx vitest run path/to/file.test.ts`
+- By name: `ddev exec npx vitest run -t "test name"`
+- Watch mode: `ddev exec npx vitest`
 
 ## Lighthouse CI
 
-- `npm run lhci:mobile`
-- `npm run lhci:desktop`
+- `ddev exec npm run lhci:mobile`
+- `ddev exec npm run lhci:desktop`
+- Always run both Lighthouse commands as part of CI verification.
+
+## CI verification
+
+- `ddev exec npm run lint`
+- `ddev exec npm run test`
+- `ddev exec npm run generate`
+- `ddev exec npm run lhci:mobile`
+- `ddev exec npm run lhci:desktop`
+- `ddev ci` runs all CI commands inside the container.
 
 ## Git hooks and commit messages
 
@@ -110,7 +129,7 @@ It summarizes how to build, lint, test, and follow local style.
 ### Vue/Nuxt patterns
 
 - Use `useHead` for page metadata.
-- Use `@nuxt/content` queries for content data (`queryContent`).
+- Use `@nuxt/content` queries for content data (`queryCollection`).
 - Components are auto-imported; avoid manual registration unless needed.
 - Global CSS is `@/assets/css/tailwind.scss` (see `nuxt.config.ts`).
 
@@ -128,8 +147,8 @@ It summarizes how to build, lint, test, and follow local style.
 
 ## Build/CI notes
 
-- Netlify build uses `npm run generate` (`netlify.toml`).
-- Lighthouse CI uses `npm run generate && npm run preview` (`lighthouserc.json`).
+- Netlify build uses `ddev exec npm run generate` (`netlify.toml`).
+- Lighthouse CI uses `ddev exec npm run generate && npm run preview` (`lighthouserc.json`).
 
 ## When editing
 
@@ -139,9 +158,9 @@ It summarizes how to build, lint, test, and follow local style.
 
 ## Helpful commands
 
-- List scripts: `npm run`
-- Clean install: `rm -rf node_modules package-lock.json && npm install`
-- Rebuild Nuxt artifacts: `npm run build`
+- List scripts: `ddev exec npm run`
+- Clean install: `ddev exec rm -rf node_modules package-lock.json && ddev exec npm install`
+- Rebuild Nuxt artifacts: `ddev exec npm run build`
 
 ## Notes for agents
 
