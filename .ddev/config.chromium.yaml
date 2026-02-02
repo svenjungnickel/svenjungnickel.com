@@ -1,0 +1,4 @@
+web_environment:
+  - CHROME_PATH=/usr/bin/chromium
+webimage_extra_packages:
+  - chromium
