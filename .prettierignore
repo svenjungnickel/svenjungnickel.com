@@ -113,3 +113,6 @@ sw.*
 
 # Lighthouse ci
 .lighthouseci/
+
+# DDEV
+.ddev/
