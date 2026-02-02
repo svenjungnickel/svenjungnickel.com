@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').where({ _path: '/' }).findOne())
+const { data: page } = await useAsyncData('index', () => queryCollection('content').path('/').first())
 
 useHead({
   title: page.value?.title || 'svenjungnickel.com',

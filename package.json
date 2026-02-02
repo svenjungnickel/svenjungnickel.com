@@ -22,7 +22,7 @@
     "lhci:desktop": "lhci autorun --collect.settings.preset=desktop"
   },
   "dependencies": {
-    "@nuxt/content": "^2.13.4",
+    "@nuxt/content": "^3.11.0",
     "@nuxt/image": "^2.0.0",
     "core-js": "^3.40.0",
     "nuxt": "^4.0.0",
@@ -40,6 +40,7 @@
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@vite-pwa/nuxt": "^1.1.0",
     "@vue/test-utils": "^2.4.0",
+    "better-sqlite3": "^12.6.2",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.0.2",
     "eslint-plugin-nuxt": "^4.0.0",
