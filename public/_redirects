@@ -1,0 +1,6 @@
+https://svenjungnickel.dev/*  https://www.svenjungnickel.dev/:splat  301!
+https://svenjungnickel.com/*  https://www.svenjungnickel.dev/:splat  301!
+https://www.svenjungnickel.com/*  https://www.svenjungnickel.dev/:splat  301!
+https://svenjungnickel.de/*  https://www.svenjungnickel.dev/:splat  301!
+https://www.svenjungnickel.de/*  https://www.svenjungnickel.dev/:splat  301!
+/*  /index.html  200
