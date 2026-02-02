@@ -5,8 +5,61 @@
     ignore = "git log -1 --pretty=%B | grep dependabot"
 
 [[redirects]]
-  from = "/*"
+  from = "https://svenjungnickel.com/*"
   to = "https://www.svenjungnickel.dev/:splat"
   status = 301
   force = true
-  conditions = { Host = ["svenjungnickel.com", "www.svenjungnickel.com", "svenjungnickel.de", "www.svenjungnickel.de", "svenjungnickel.dev"] }
+
+[[redirects]]
+  from = "https://www.svenjungnickel.com/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://svenjungnickel.de/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.svenjungnickel.de/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://svenjungnickel.dev/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://svenjungnickel.com/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.svenjungnickel.com/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://svenjungnickel.de/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.svenjungnickel.de/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://svenjungnickel.dev/*"
+  to = "https://www.svenjungnickel.dev/:splat"
+  status = 301
+  force = true
