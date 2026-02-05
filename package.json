@@ -22,7 +22,7 @@
     "lhci:desktop": "lhci autorun --collect.settings.preset=desktop"
   },
   "dependencies": {
-    "@nuxt/content": "^3.11.0",
+    "@nuxt/content": "^3.11.2",
     "@nuxt/image": "^2.0.0",
     "core-js": "^3.40.0",
     "nuxt": "^4.0.0",
