@@ -14,7 +14,8 @@ web_environment:
   - CHROME_FLAGS=--no-sandbox --disable-dev-shm-usage
 corepack_enable: false
 omit_containers: [db]
-disable_upload_dirs_warning: true
+upload_dirs:
+   - node_modules
 
 # Key features of DDEV's config.yaml:
 
