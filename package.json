@@ -39,7 +39,7 @@
     "@nuxtjs/stylelint-module": "^5.2.0",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@vite-pwa/nuxt": "^1.1.1",
-    "@vue/test-utils": "^2.4.0",
+    "@vue/test-utils": "^2.4.10",
     "better-sqlite3": "^12.9.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.0.2",
