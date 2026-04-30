@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.27.0",
-    "@commitlint/cli": "^20.5.0",
+    "@commitlint/cli": "^20.5.3",
     "@commitlint/config-conventional": "^20.5.0",
     "@lhci/cli": "^0.15.1",
     "@nuxt/devtools": "^3.2.4",
