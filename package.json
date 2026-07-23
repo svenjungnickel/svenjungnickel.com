@@ -47,7 +47,7 @@
     "eslint-plugin-vue": "^10.9.2",
     "happy-dom": "^20.11.1",
     "husky": "^9.1.7",
-    "lint-staged": "^17.0.8",
+    "lint-staged": "^17.2.0",
     "postcss": "^8.5.22",
     "postcss-html": "^1.8.0",
     "prettier": "^3.9.5",
