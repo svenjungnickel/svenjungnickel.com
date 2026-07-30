@@ -50,7 +50,7 @@
     "lint-staged": "^17.2.0",
     "postcss": "^8.5.22",
     "postcss-html": "^1.8.0",
-    "prettier": "^3.9.5",
+    "prettier": "^3.9.6",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "sass": "^1.101.7",
     "stylelint": "^17.14.1",
