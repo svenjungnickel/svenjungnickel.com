@@ -39,7 +39,7 @@
     "@vite-pwa/nuxt": "^1.1.1",
     "@vue/test-utils": "^2.4.11",
     "better-sqlite3": "^12.11.1",
-    "happy-dom": "^20.11.1",
+    "happy-dom": "^20.11.2",
     "husky": "^9.1.7",
     "lint-staged": "^17.3.0",
     "oxlint": "^1.77.0",
