@@ -33,7 +33,7 @@
     "@commitlint/config-conventional": "^21.2.0",
     "@lhci/cli": "^0.15.1",
     "@nuxt/devtools": "^3.4.2",
-    "@nuxt/test-utils": "^4.2.0",
+    "@nuxt/test-utils": "^4.3.2",
     "@nuxtjs/stylelint-module": "^5.2.0",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@vite-pwa/nuxt": "^1.1.1",
