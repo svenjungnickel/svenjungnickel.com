@@ -37,7 +37,7 @@
     "@nuxtjs/stylelint-module": "^5.2.0",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@vite-pwa/nuxt": "^1.1.1",
-    "@vue/test-utils": "^2.5.0",
+    "@vue/test-utils": "^2.5.1",
     "better-sqlite3": "^13.0.3",
     "happy-dom": "^20.14.5",
     "husky": "^9.1.7",
