@@ -45,7 +45,7 @@
     "oxlint": "^1.83.0",
     "postcss": "^8.5.28",
     "postcss-html": "^2.0.0",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.8",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "sass": "^1.104.1",
     "stylelint": "^17.15.0",
