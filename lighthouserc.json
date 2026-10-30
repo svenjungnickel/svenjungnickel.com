@@ -1,8 +1,10 @@
 {
   "ci": {
     "collect": {
-      "startServerCommand": "npm run generate && npm run preview",
-      "url": ["http://localhost:3000/"],
+      "startServerCommand": "npm run generate && PORT=4173 npm run preview",
+      "startServerReadyPattern": "Accepting connections",
+      "startServerReadyTimeout": 60000,
+      "url": ["http://localhost:4173/"],
       "numberOfRuns": 3,
       "settings": {
         "onlyCategories": ["performance", "accessibility", "best-practices", "seo"],
