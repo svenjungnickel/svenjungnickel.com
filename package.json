@@ -49,7 +49,7 @@
     "prettier-plugin-tailwindcss": "^0.8.1",
     "sass": "^1.108.1",
     "serve": "^14.2.7",
-    "stylelint": "^17.16.0",
+    "stylelint": "^18.0.0",
     "stylelint-config-recommended-vue": "^2.0.0",
     "stylelint-config-standard": "^40.0.0",
     "vite-svg-loader": "^5.1.3",
