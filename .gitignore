@@ -104,3 +104,6 @@ sw.*
 
 # Lighthouse ci results
 .lighthouseci/
+
+# Local Netlify folder
+.netlify
