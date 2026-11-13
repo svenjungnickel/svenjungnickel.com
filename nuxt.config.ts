@@ -49,6 +49,8 @@ export default defineNuxtConfig({
   // Dev server configuration
   devServer: {
     host: '0.0.0.0',
+    // Allow ddev hostnames (e.g. svenjungnickel.ddev.site), required since Nuxt 4.6.4
+    allowedHosts: ['.ddev.site'],
   },
 
   // Image configuration
