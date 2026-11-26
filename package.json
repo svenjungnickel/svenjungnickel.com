@@ -41,7 +41,7 @@
     "better-sqlite3": "^13.2.0",
     "happy-dom": "^21.0.4",
     "husky": "^9.1.7",
-    "lint-staged": "^17.6.1",
+    "lint-staged": "^17.6.2",
     "oxlint": "^1.95.0",
     "postcss": "^8.5.33",
     "postcss-html": "^2.0.1",
